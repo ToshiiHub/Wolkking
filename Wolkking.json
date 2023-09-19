@@ -76,6 +76,19 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Generic Backgrounds/1835a8e778f048485605f0cecdca221dccb5d4b05821f101c1fc05d239f422b2_tiled_Empty Cloud Background.png",
           "name": "tiled_Empty Cloud Background.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/SoundCloud.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "SoundCloud.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Flat Social Media Icons/facaefe2d9353453f781ae0abb8e3541f9352288cf0c51b5d91125dc27f79ab6_SoundCloud.png",
+          "name": "SoundCloud.png"
+        }
       }
     ],
     "resourceFolders": []
