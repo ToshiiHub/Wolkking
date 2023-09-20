@@ -70,6 +70,21 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "SoundCloud",
+      "persistentUuid": "dca940db-ab63-4efc-98f2-bc52213fca5c",
+      "width": 0,
+      "x": 417,
+      "y": 215,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
