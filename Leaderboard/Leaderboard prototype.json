@@ -312,6 +312,51 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "NewText",
+          "persistentUuid": "ea2c483e-5e32-4bc8-85de-13c4eb1ca344",
+          "width": 0,
+          "x": 740,
+          "y": 182,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "NewText",
+          "persistentUuid": "0be6e123-9f87-48a3-beab-e1c2ef6145d9",
+          "width": 0,
+          "x": 702,
+          "y": 177,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "NewText",
+          "persistentUuid": "8008bbd0-8a2b-4f11-99b1-b43db9c6380d",
+          "width": 0,
+          "x": 678,
+          "y": 128,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
