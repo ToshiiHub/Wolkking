@@ -89,6 +89,17 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Flat Social Media Icons/facaefe2d9353453f781ae0abb8e3541f9352288cf0c51b5d91125dc27f79ab6_SoundCloud.png",
           "name": "SoundCloud.png"
         }
+      },
+      {
+        "file": "assets/banner.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "banner.glb",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/3D Mini Dungeon/f6df7962b8b64025467f2074e97c4281b11c7e12883ca07ef50cac8016300974_banner.glb",
+          "name": "banner.glb"
+        }
       }
     ],
     "resourceFolders": []

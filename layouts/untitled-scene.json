@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6455105703311478,
+    "zoomFactor": 0.2308918338522489,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -77,10 +77,10 @@
       "height": 0,
       "layer": "",
       "name": "SoundCloud",
-      "persistentUuid": "dca940db-ab63-4efc-98f2-bc52213fca5c",
+      "persistentUuid": "fe4446fa-0eec-4bb7-b179-2b7955a2c5e7",
       "width": 0,
-      "x": 417,
-      "y": 215,
+      "x": 391,
+      "y": 267,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -89,30 +89,15 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 1,
-      "height": 653,
-      "layer": "Background",
-      "name": "EmptyCloudBackground",
-      "persistentUuid": "6163cb73-c223-4ad4-ab20-8104905476b1",
-      "width": 830,
-      "x": -45,
-      "y": 182,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "depth": 484,
+      "height": 437,
       "layer": "",
-      "name": "SoundCloud",
-      "persistentUuid": "2a835cb2-7b4c-4f5e-92e4-aee2f359891c",
-      "width": 0,
-      "x": 735,
-      "y": 228,
-      "zOrder": 3,
+      "name": "Banner",
+      "persistentUuid": "9203c2e6-52d9-4b5f-a152-780fe157cc2a",
+      "width": 73,
+      "x": 1040,
+      "y": 99,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -191,6 +176,29 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "99200fb08a6402c1a2004253844c6177b1dde79b498283cac2368706a2b4db0d",
+      "name": "Banner",
+      "tags": "",
+      "type": "Scene3D::Model3DObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "centerLocation": "ModelOrigin",
+        "depth": 20,
+        "height": 20,
+        "keepAspectRatio": true,
+        "materialType": "StandardWithoutMetalness",
+        "modelResourceName": "banner.glb",
+        "originLocation": "ModelOrigin",
+        "rotationX": 90,
+        "rotationY": 0,
+        "rotationZ": -90,
+        "width": 20,
+        "animations": []
+      }
     }
   ],
   "events": [
