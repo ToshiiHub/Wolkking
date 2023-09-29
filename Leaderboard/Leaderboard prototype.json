@@ -19025,7 +19025,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.19868339316361747,
+        "zoomFactor": 0.45523747729484565,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -19080,21 +19080,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
-          "name": "target",
-          "persistentUuid": "508d0587-972c-4f8d-bd48-7b7bd7caa735",
-          "width": 0,
-          "x": 480,
-          "y": 433,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
           "layer": "UI",
           "name": "txtentry",
           "persistentUuid": "436d80d7-bd34-4c34-abd9-2282a3a2765d",
@@ -19138,22 +19123,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 2,
-          "height": 150,
-          "layer": "Pause",
-          "name": "Submit",
-          "persistentUuid": "a5e11d67-df09-44be-9900-ca6a897c205e",
-          "width": 150,
-          "x": 317,
-          "y": 1005,
-          "zOrder": 22,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "UI",
@@ -19175,7 +19144,7 @@
           "layer": "Background",
           "name": "ForestBackground",
           "persistentUuid": "55e0e6b0-c984-4749-b5e7-2aeb1303952f",
-          "width": 2657,
+          "width": 2524,
           "x": -206,
           "y": -181,
           "zOrder": 9,
@@ -19320,8 +19289,8 @@
           "name": "Checkpoint_4",
           "persistentUuid": "683e9843-4914-4ca2-a355-523bc6e57fe4",
           "width": 156,
-          "x": 1770,
-          "y": 348,
+          "x": 1769,
+          "y": 351,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -19374,6 +19343,86 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 6,
+          "height": 190,
+          "layer": "",
+          "name": "Apple",
+          "persistentUuid": "09812f29-1d42-472a-b339-0e7a38addd04",
+          "width": 190,
+          "x": 667,
+          "y": 364,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 6,
+          "height": 206,
+          "layer": "",
+          "name": "Cherries",
+          "persistentUuid": "4345b9f6-6b8b-4c9d-a86c-bcec5aa51832",
+          "width": 206,
+          "x": 500,
+          "y": 345,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 6,
+          "height": 197,
+          "layer": "",
+          "name": "Strawberry",
+          "persistentUuid": "53ceb2ea-e6c3-4b33-929a-7a5b674d0bfb",
+          "width": 197,
+          "x": 358,
+          "y": 348,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 6,
+          "height": 183,
+          "layer": "",
+          "name": "Melon",
+          "persistentUuid": "45251f5f-f56a-43e4-89ca-7f76777b4c36",
+          "width": 183,
+          "x": 234,
+          "y": 361,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 4,
+          "height": 269,
+          "layer": "",
+          "name": "Trophy",
+          "persistentUuid": "27953f81-0cae-4694-807c-cdddc3ac4fbc",
+          "width": 269,
+          "x": 2082,
+          "y": 240,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -19387,6 +19436,20 @@
           "variables": [],
           "effects": [],
           "behaviors": [
+            {
+              "name": "PlatformerCharacterAnimator",
+              "type": "PlatformerCharacterAnimator::PlatformerCharacterAnimator",
+              "EnableAnimationChanges": true,
+              "EnableHorizontalFlipping": true,
+              "IdleAnimationName": "Idle",
+              "RunAnimationName": "Running",
+              "JumpAnimationName": "Jumping",
+              "FallAnimationName": "Fall",
+              "ClimbAnimationName": "Climb",
+              "PlatformerBehavior": "PlatformerObject",
+              "Animation": "Animation",
+              "Flippable": "Flippable"
+            },
             {
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
@@ -79102,7 +79165,7 @@
               },
               "parameters": [
                 "Player",
-                "target",
+                "Apple",
                 "",
                 "",
                 ""
@@ -79124,6 +79187,147 @@
                 "User.score",
                 "+",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Apple",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Cherries",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "User.score",
+                "+",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Cherries",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Strawberry",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "User.score",
+                "+",
+                "7"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Strawberry",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Melon",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "User.score",
+                "+",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Melon",
+                ""
               ]
             }
           ]
@@ -79165,22 +79369,14 @@
           "conditions": [
             {
               "type": {
-                "value": "SourisSurObjet"
+                "value": "CollisionNP"
               },
               "parameters": [
-                "Submit",
+                "Player",
+                "Trophy",
                 "",
                 "",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
               ]
             },
             {
@@ -79711,6 +79907,16 @@
                     "Variable(posX)",
                     "=",
                     "Variable(posY)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "User.score",
+                    "-",
+                    "1"
                   ]
                 }
               ]
@@ -80283,6 +80489,10 @@
           "type": "PlatformBehavior::PlatformBehavior"
         },
         {
+          "name": "PlatformerCharacterAnimator",
+          "type": "PlatformerCharacterAnimator::PlatformerCharacterAnimator"
+        },
+        {
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior"
         },
@@ -80525,6 +80735,1377 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "author": "",
+      "category": "Movement",
+      "extensionNamespace": "",
+      "fullName": "Platformer character animator",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPGc+DQoJPHBhdGggZD0iTTIzLDExYzIuMiwwLDQtMS44LDQtNHMtMS44LTQtNC00cy00LDEuOC00LDRTMjAuOCwxMSwyMywxMXoiLz4NCgk8cGF0aCBkPSJNMzAuOCwxMi40Yy0wLjMtMC40LTEtMC41LTEuNC0wLjJsLTIuOSwyLjNjLTAuOCwwLjctMiwwLjYtMi43LTAuMmwtNy45LTcuOWMtMS42LTEuNi00LjEtMS42LTUuNywwTDcuMyw5LjMNCgkJYy0wLjQsMC40LTAuNCwxLDAsMS40czEsMC40LDEuNCwwbDIuOC0yLjhjMC44LTAuOCwyLjEtMC44LDIuOSwwbDEuNiwxLjZMMTEuNiwxNGMtMSwxLTEuNCwyLjMtMS4xLDMuN2MwLjIsMS4xLDAuOSwyLDEuOCwyLjYNCgkJbC0xLjYsMS42Yy0wLjQsMC40LTEsMC40LTEuNCwwbC0zLjYtMy42Yy0wLjQtMC40LTEtMC40LTEuNCwwcy0wLjQsMSwwLDEuNGwzLjYsMy42YzAuNiwwLjYsMS4zLDAuOSwyLjEsMC45czEuNi0wLjMsMi4xLTAuOQ0KCQlsMi4xLTIuMWwyLjUsMWMwLjcsMC4zLDEuMiwxLDEuMiwxLjh2NmMwLDAuNiwwLjQsMSwxLDFzMS0wLjQsMS0xdi02YzAtMS42LTEtMy4xLTIuNS0zLjdsLTEuNy0wLjdsNS4yLTUuMmwxLjQsMS40DQoJCWMwLjgsMC44LDEuOCwxLjIsMi45LDEuMmMwLjksMCwxLjgtMC4zLDIuNS0wLjlsMi45LTIuM0MzMS4xLDEzLjQsMzEuMSwxMi44LDMwLjgsMTIuNHoiLz4NCjwvZz4NCjwvc3ZnPg0K",
+      "name": "PlatformerCharacterAnimator",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/Glyphster Pack/Master/SVG/Sports and Fitness/Sports and Fitness_training_running_run.svg",
+      "shortDescription": "Change animations and horizontal flipping of a platformer character automatically.",
+      "version": "1.1.0",
+      "description": [
+        "Automatically change the animations and horizontal flipping of a platformer character based on movement and interaction with platform objects.",
+        "",
+        "The platformer example uses this extension ([open the project online](https://editor.gdevelop.io/?project=example://platformer))."
+      ],
+      "origin": {
+        "identifier": "PlatformerCharacterAnimator",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "animation",
+        "platformer",
+        "platform",
+        "flip"
+      ],
+      "authorIds": [
+        "gqDaZjCfevOOxBYkK6zlhtZnXCg1"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Change animations and horizontal flipping of a platformer character automatically.",
+          "fullName": "Platformer character animator",
+          "name": "PlatformerCharacterAnimator",
+          "objectType": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Flip character based on input from controls",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformerCharacterAnimator::PlatformerCharacterAnimator::PropertyEnableHorizontalFlipping"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior",
+                                "\"Left\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior",
+                                "\"Right\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "FlippableCapability::FlippableBehavior::FlipX"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Flippable",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior",
+                                "\"Right\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior",
+                                "\"Left\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "FlippableCapability::FlippableBehavior::FlipX"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Flippable",
+                                "no"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Change animations",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformerCharacterAnimator::PlatformerCharacterAnimator::PropertyEnableAnimationChanges"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsJumping"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Animation",
+                                "=",
+                                "Object.Behavior::PropertyJumpAnimationName()"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsFalling"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Animation",
+                                "=",
+                                "Object.Behavior::PropertyFallAnimationName()"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsOnFloor"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "PlatformerBehavior"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Animation",
+                                    "=",
+                                    "Object.Behavior::PropertyRunAnimationName()"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "PlatformerBehavior"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Animation",
+                                    "=",
+                                    "Object.Behavior::PropertyIdleAnimationName()"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsOnLadder"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Animation",
+                                    "=",
+                                    "Object.Behavior::PropertyClimbAnimationName()"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "PlatformerBehavior"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Animation"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "PlatformerBehavior"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Animation"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "PlatformBehavior::IsOnLadder"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Animation"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PlatformerCharacterAnimator::PlatformerCharacterAnimator",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onActivate",
+              "sentence": "",
+              "events": [
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Flip character based on input from controls",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformerCharacterAnimator::PlatformerCharacterAnimator::PropertyEnableHorizontalFlipping"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior",
+                                "\"Left\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior",
+                                "\"Right\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "FlippableCapability::FlippableBehavior::FlipX"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Flip",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior",
+                                "\"Right\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior",
+                                "\"Left\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "FlippableCapability::FlippableBehavior::FlipX"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Flip",
+                                "no"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                },
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Change animations",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformerCharacterAnimator::PlatformerCharacterAnimator::PropertyEnableAnimationChanges"
+                          },
+                          "parameters": [
+                            "Object",
+                            "Behavior"
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsJumping"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Animation",
+                                "=",
+                                "Object.Behavior::PropertyJumpAnimationName()"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsFalling"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Animation",
+                                "=",
+                                "Object.Behavior::PropertyFallAnimationName()"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsOnFloor"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "PlatformerBehavior"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Animation",
+                                    "=",
+                                    "Object.Behavior::PropertyRunAnimationName()"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "PlatformerBehavior"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Animation",
+                                    "=",
+                                    "Object.Behavior::PropertyIdleAnimationName()"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IsOnLadder"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior"
+                              ]
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Animation",
+                                    "=",
+                                    "Object.Behavior::PropertyClimbAnimationName()"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "PlatformerBehavior"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Animation"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": true,
+                                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "PlatformerBehavior"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+                                  },
+                                  "parameters": [
+                                    "Object",
+                                    "Animation"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "PlatformBehavior::IsOnLadder"
+                              },
+                              "parameters": [
+                                "Object",
+                                "PlatformerBehavior"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                              },
+                              "parameters": [
+                                "Object",
+                                "Animation"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PlatformerCharacterAnimator::PlatformerCharacterAnimator",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Enable (or disable) automated animation changes a platformer character. Disabling animation changes is useful to play custom animations.",
+              "fullName": "Enable (or disable) automated animation changes",
+              "functionType": "Action",
+              "name": "EnableChangingAnimations",
+              "sentence": "Enable automated animation changes on _PARAM0_: _PARAM2_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlatformerCharacterAnimator::PlatformerCharacterAnimator::SetPropertyEnableAnimationChanges"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GetArgumentAsBoolean"
+                      },
+                      "parameters": [
+                        "\"EnableAnimationChanges\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlatformerCharacterAnimator::PlatformerCharacterAnimator::SetPropertyEnableAnimationChanges"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PlatformerCharacterAnimator::PlatformerCharacterAnimator",
+                  "type": "behavior"
+                },
+                {
+                  "defaultValue": "yes",
+                  "description": "Change animations automatically",
+                  "name": "EnableAnimationChanges",
+                  "optional": true,
+                  "type": "yesorno"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Enable (or disable) automated horizontal flipping of a platform character.",
+              "fullName": "Enable (or disable) automated horizontal flipping",
+              "functionType": "Action",
+              "name": "EnableHorizontalFlipping",
+              "sentence": "Enable automated horizontal flipping on _PARAM0_: _PARAM2_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlatformerCharacterAnimator::PlatformerCharacterAnimator::SetPropertyEnableHorizontalFlipping"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GetArgumentAsBoolean"
+                      },
+                      "parameters": [
+                        "\"EnableHorizontalFlipping\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlatformerCharacterAnimator::PlatformerCharacterAnimator::SetPropertyEnableHorizontalFlipping"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "yes"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PlatformerCharacterAnimator::PlatformerCharacterAnimator",
+                  "type": "behavior"
+                },
+                {
+                  "defaultValue": "yes",
+                  "description": "Enable horizontal flipping",
+                  "name": "EnableHorizontalFlipping",
+                  "optional": true,
+                  "type": "yesorno"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Set the \"Idle\" animation name. Do not use quotation marks.",
+              "fullName": "\"Idle\" animation name",
+              "functionType": "Action",
+              "group": "Configure animations",
+              "name": "SetIdleAnimationName",
+              "sentence": "Set \"Idle\" animation of _PARAM0_ to _PARAM2_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlatformerCharacterAnimator::PlatformerCharacterAnimator::SetPropertyIdleAnimationName"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "GetArgumentAsString(\"AnimationName\")"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PlatformerCharacterAnimator::PlatformerCharacterAnimator",
+                  "type": "behavior"
+                },
+                {
+                  "description": "Animation name",
+                  "name": "AnimationName",
+                  "type": "string"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Set the \"Move\" animation name. Do not use quotation marks.",
+              "fullName": "\"Move\" animation name",
+              "functionType": "Action",
+              "group": "Configure animations",
+              "name": "SetMoveAnimationName",
+              "sentence": "Set \"Move\" animation of _PARAM0_ to _PARAM2_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlatformerCharacterAnimator::PlatformerCharacterAnimator::SetPropertyRunAnimationName"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "GetArgumentAsString(\"AnimationName\")"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PlatformerCharacterAnimator::PlatformerCharacterAnimator",
+                  "type": "behavior"
+                },
+                {
+                  "description": "Animation name",
+                  "name": "AnimationName",
+                  "type": "string"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Set the \"Jump\" animation name. Do not use quotation marks.",
+              "fullName": "\"Jump\" animation name",
+              "functionType": "Action",
+              "group": "Configure animations",
+              "name": "SetJumpAnimationName",
+              "sentence": "Set \"Jump\" animation of _PARAM0_ to _PARAM2_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlatformerCharacterAnimator::PlatformerCharacterAnimator::SetPropertyJumpAnimationName"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "GetArgumentAsString(\"AnimationName\")"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PlatformerCharacterAnimator::PlatformerCharacterAnimator",
+                  "type": "behavior"
+                },
+                {
+                  "description": "Animation name",
+                  "name": "AnimationName",
+                  "type": "string"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Set the \"Fall\" animation name. Do not use quotation marks.",
+              "fullName": "\"Fall\" animation name",
+              "functionType": "Action",
+              "group": "Configure animations",
+              "name": "SetFallAnimationName",
+              "sentence": "Set \"Fall\" animation of _PARAM0_ to _PARAM2_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlatformerCharacterAnimator::PlatformerCharacterAnimator::SetPropertyFallAnimationName"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "GetArgumentAsString(\"AnimationName\")"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PlatformerCharacterAnimator::PlatformerCharacterAnimator",
+                  "type": "behavior"
+                },
+                {
+                  "description": "Animation name",
+                  "name": "AnimationName",
+                  "type": "string"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Set the \"Climb\" animation name. Do not use quotation marks.",
+              "fullName": "\"Climb\" animation name",
+              "functionType": "Action",
+              "group": "Configure animations",
+              "name": "SetClimbAnimationName",
+              "sentence": "Set \"Climb\" animation of _PARAM0_ to _PARAM2_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlatformerCharacterAnimator::PlatformerCharacterAnimator::SetPropertyClimbAnimationName"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "GetArgumentAsString(\"AnimationName\")"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PlatformerCharacterAnimator::PlatformerCharacterAnimator",
+                  "type": "behavior"
+                },
+                {
+                  "description": "Animation name",
+                  "name": "AnimationName",
+                  "type": "string"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "true",
+              "type": "Boolean",
+              "label": "Enable animation changes",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "EnableAnimationChanges"
+            },
+            {
+              "value": "true",
+              "type": "Boolean",
+              "label": "Enable horizontal flipping",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "EnableHorizontalFlipping"
+            },
+            {
+              "value": "Idle",
+              "type": "String",
+              "label": "\"Idle\" animation name ",
+              "description": "",
+              "group": "Animation names",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "IdleAnimationName"
+            },
+            {
+              "value": "Run",
+              "type": "String",
+              "label": "\"Run\" animation name",
+              "description": "",
+              "group": "Animation names",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "RunAnimationName"
+            },
+            {
+              "value": "Jump",
+              "type": "String",
+              "label": "\"Jump\" animation name",
+              "description": "",
+              "group": "Animation names",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "JumpAnimationName"
+            },
+            {
+              "value": "Fall",
+              "type": "String",
+              "label": "\"Fall\" animation name",
+              "description": "",
+              "group": "Animation names",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "FallAnimationName"
+            },
+            {
+              "value": "Climb",
+              "type": "String",
+              "label": "\"Climb\" animation name",
+              "description": "",
+              "group": "Animation names",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "ClimbAnimationName"
+            },
+            {
+              "value": "",
+              "type": "Behavior",
+              "label": "Platformer character",
+              "description": "",
+              "group": "",
+              "extraInformation": [
+                "PlatformBehavior::PlatformerObjectBehavior"
+              ],
+              "hidden": false,
+              "name": "PlatformerBehavior"
+            },
+            {
+              "value": "",
+              "type": "Behavior",
+              "label": "Animatable capacity",
+              "description": "",
+              "group": "",
+              "extraInformation": [
+                "AnimatableCapability::AnimatableBehavior"
+              ],
+              "hidden": false,
+              "name": "Animation"
+            },
+            {
+              "value": "",
+              "type": "Behavior",
+              "label": "Flippable capacity",
+              "description": "",
+              "group": "",
+              "extraInformation": [
+                "FlippableCapability::FlippableBehavior"
+              ],
+              "hidden": false,
+              "name": "Flippable"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": []
+    },
     {
       "author": "",
       "category": "User interface",
