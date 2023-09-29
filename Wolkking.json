@@ -91,15 +91,338 @@
         }
       },
       {
-        "file": "assets/banner.glb",
-        "kind": "model3D",
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Crouch.png",
+        "kind": "image",
         "metadata": "",
-        "name": "banner.glb",
+        "name": "Dino Lena_Crouch.png",
+        "smoothed": false,
         "userAdded": false,
         "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/3D Mini Dungeon/f6df7962b8b64025467f2074e97c4281b11c7e12883ca07ef50cac8016300974_banner.glb",
-          "name": "banner.glb"
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/38f697f550fe5328d1045c969c07274bfbdde9cd8558807250d15e0c0374b5d5_Dino Lena_Crouch.png",
+          "name": "Dino Lena_Crouch.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Hurt_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Hurt_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/62ba986a96335f40b9edac076eac0e5efe450b2ca4c79c303934dcc86406655f_Dino Lena_Hurt_1.png",
+          "name": "Dino Lena_Hurt_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Hurt_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Hurt_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/47e75fc8cac23e346ecd2689ebb50551d7ba85f00d97bb8d62f9c6c9d2ebc1df_Dino Lena_Hurt_2.png",
+          "name": "Dino Lena_Hurt_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Hurt_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Hurt_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/33284258c5794077e1bf5794a637c469ebf85bbae5961b8f665f6fcb4705ab9e_Dino Lena_Hurt_3.png",
+          "name": "Dino Lena_Hurt_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Hurt_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Hurt_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/dd9a42296e6304e6df8c351f349731a08c29c8d7095cf9822279476c4922fe33_Dino Lena_Hurt_4.png",
+          "name": "Dino Lena_Hurt_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Idle_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/62ba986a96335f40b9edac076eac0e5efe450b2ca4c79c303934dcc86406655f_Dino Lena_Idle_1.png",
+          "name": "Dino Lena_Idle_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Idle_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/8492ce402a0db05e1976ab6e81a43a0e85c8d5f537b0b470546db544c79dbb1b_Dino Lena_Idle_2.png",
+          "name": "Dino Lena_Idle_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Idle_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/0fe99b3b60a8922f1272484c4089048db528769ac5f535e3baf4758ec3ae536a_Dino Lena_Idle_3.png",
+          "name": "Dino Lena_Idle_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Idle_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/a7f52468dfac3f6ab46de5357743878edec3494bebeed5f9dd7bf72195573ea0_Dino Lena_Idle_4.png",
+          "name": "Dino Lena_Idle_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Kick_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Kick_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/62ba986a96335f40b9edac076eac0e5efe450b2ca4c79c303934dcc86406655f_Dino Lena_Kick_1.png",
+          "name": "Dino Lena_Kick_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Kick_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Kick_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/ce87e45a718da177ab08964b0f0b5693cca654c88688aca67c31cd087de891b7_Dino Lena_Kick_2.png",
+          "name": "Dino Lena_Kick_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Kick_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Kick_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/16dcf483a262dbc49c4f1543bcc36c374e06c72ca5c82c5cb9e46c518da54e12_Dino Lena_Kick_3.png",
+          "name": "Dino Lena_Kick_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Move_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Move_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/759ed72f26ca3af048b62887d3118a6d3690cf640cc467f5989e0b4105fa2159_Dino Lena_Move_1.png",
+          "name": "Dino Lena_Move_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Move_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Move_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/8157593265cff5b8479c3413764304f7838f87281217d2b318157336423ea9b5_Dino Lena_Move_2.png",
+          "name": "Dino Lena_Move_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Move_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Move_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/f8395897f21c23323e4e62b72913fc6d0e0dcf8255ed9ede0901786eb69b0544_Dino Lena_Move_3.png",
+          "name": "Dino Lena_Move_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Move_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Move_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/005d4120c26f2ad983915808b12708ef994448a15eda9178355687330947dddd_Dino Lena_Move_4.png",
+          "name": "Dino Lena_Move_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Move_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Move_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/c0aba4f29bb6a6f73e4941bf1010f5e08830d9198a2eaa51677434d628199f8a_Dino Lena_Move_5.png",
+          "name": "Dino Lena_Move_5.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Move_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Move_6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/cb2ae219e506711d774cb913dd21f0c58977b0c7a0cf9816e11298e5e02207e0_Dino Lena_Move_6.png",
+          "name": "Dino Lena_Move_6.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Sneak_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Sneak_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/c502648c5aa0fb447cbe65f8ae090d070a951c953211ee1789855e6b617258e4_Dino Lena_Sneak_1.png",
+          "name": "Dino Lena_Sneak_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Sneak_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Sneak_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/d4b295403295fc1714b3def49ab13c3b2a67fc484a97592aa372e05e4e91c7f7_Dino Lena_Sneak_2.png",
+          "name": "Dino Lena_Sneak_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Sneak_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Sneak_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/a2ed526c7be5c203bd915bf2bc4740369ca1fe5fb6adc52ee188c4933e1b2b6d_Dino Lena_Sneak_3.png",
+          "name": "Dino Lena_Sneak_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Sneak_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Sneak_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/9563bd3d840caa642bf0f51a073ee7f081f6f1a4b3d80e8c499721a9ebd9f16a_Dino Lena_Sneak_4.png",
+          "name": "Dino Lena_Sneak_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Sneak_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Sneak_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/9c4730dec696809f052cdccb3a3811797da6f3f56cc33bdaf5bd3a91eac43d06_Dino Lena_Sneak_5.png",
+          "name": "Dino Lena_Sneak_5.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Dino Lena_Sneak_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dino Lena_Sneak_6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/32e514fb3ce3464cd030573ce63ddb2daf63d72124ffe5543a2682f5a30d7f97_Dino Lena_Sneak_6.png",
+          "name": "Dino Lena_Sneak_6.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/cloud 5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cloud 5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Generic Backgrounds/Background Objects/Retina/5f22381785b74cf9c2f6532a15026df7ddc8156c1dda68c44847d4ca7828c95b_cloud 5.png",
+          "name": "cloud 5.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/cloud6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "cloud 5",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -114,7 +437,16 @@
     }
   ],
   "externalEvents": [],
-  "eventsFunctionsExtensions": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/gamepads"
+    }
+  ],
   "externalLayouts": [],
   "externalSourceFiles": []
 }
