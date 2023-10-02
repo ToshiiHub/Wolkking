@@ -18967,6 +18967,19 @@
         "name": "Down-Arrow2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Down-Arrow4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Down-Arrow.png2",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Lucid Icons Pack/Flat/8de1326f11fd4624ad095be5dcaf91ec69947adbb523a5627ee1e50ebae5a0f7_Down-Arrow.png",
+          "name": "Down-Arrow.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -19025,7 +19038,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.7242371765027017,
+        "zoomFactor": 0.6777580726146251,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -19114,25 +19127,9 @@
           "name": "Redo",
           "persistentUuid": "362f9a75-fa8d-4dba-aacd-e666309d76d9",
           "width": 121,
-          "x": 584,
+          "x": 515,
           "y": 1013,
           "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 12,
-          "height": 159,
-          "layer": "Pause",
-          "name": "DownArrow",
-          "persistentUuid": "84e8ce40-4bdb-490e-9a01-94a0a23c953f",
-          "width": 159,
-          "x": 58,
-          "y": 1000,
-          "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -19289,8 +19286,8 @@
           "layer": "Background",
           "name": "ForestBackground",
           "persistentUuid": "f9fdd2a2-7124-4878-9097-a7a440b62b98",
-          "width": 2218,
-          "x": -69,
+          "width": 2148,
+          "x": 1,
           "y": -59,
           "zOrder": 23,
           "numberProperties": [],
@@ -19325,22 +19322,6 @@
           "x": 19,
           "y": 378,
           "zOrder": 25,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 169,
-          "layer": "Pause",
-          "name": "Cloud3",
-          "persistentUuid": "50f398ee-af28-4629-aebd-7f0db7d11c32",
-          "width": 262,
-          "x": 264,
-          "y": 1009,
-          "zOrder": 26,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -19421,6 +19402,37 @@
           "x": 2015,
           "y": 348,
           "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "DownArrow2",
+          "persistentUuid": "75b3d839-a707-425f-86c5-a5ab19bb4d92",
+          "width": 0,
+          "x": 155,
+          "y": 1060,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 10,
+          "height": 146,
+          "layer": "Pause",
+          "name": "DownArrow2",
+          "persistentUuid": "0a517415-6023-4cf6-aff5-8404814215b2",
+          "width": 146,
+          "x": 133,
+          "y": 1019,
+          "zOrder": 33,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20476,10 +20488,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": false,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": false,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
@@ -40611,6 +40623,8 @@
               "Flippable": "Flippable"
             },
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -40623,9 +40637,7 @@
               "ladderClimbingSpeed": 150,
               "maxFallingSpeed": 700,
               "maxSpeed": 250,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
@@ -79207,6 +79219,67 @@
               "width": 192
             }
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "9ed1840bbebfc7031e6f529fab5285b8e2bd8e6737db9eee6f8aa770d5c90f7c",
+          "name": "DownArrow2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Down-Arrow.png2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 14,
+                            "y": 0
+                          },
+                          {
+                            "x": 14,
+                            "y": 14
+                          },
+                          {
+                            "x": 0,
+                            "y": 14
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -80059,7 +80132,7 @@
                     "value": "SourisSurObjet"
                   },
                   "parameters": [
-                    "DownArrow",
+                    "DownArrow2",
                     "",
                     "",
                     ""
@@ -80120,7 +80193,7 @@
                     "value": "SourisSurObjet"
                   },
                   "parameters": [
-                    "DownArrow",
+                    "DownArrow2",
                     "",
                     "",
                     ""
